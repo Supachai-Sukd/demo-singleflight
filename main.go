@@ -30,7 +30,7 @@ func main() {
 
 func handleSingleflight(c *gin.Context) {
 	result, err, _ := group.Do("data", func() (interface{}, error) {
-		// สำหรับตัวอย่างนี้เราจะสร้างข้อมูลโดยใช้เวลาสุ่ม 1 วินาที
+		// สำหรับตัวอย่างนี้เราจะสร้างข้อมูลโดยใช้เวลา 1 วินาที
 		time.Sleep(1 * time.Second)
 
 		// ในตัวอย่างนี้เราจะสร้างข้อมูลเป็น timestamp ปัจจุบัน

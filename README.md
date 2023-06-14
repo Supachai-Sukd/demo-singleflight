@@ -6,6 +6,11 @@
 git clone https://github.com/Supachai-Sukd/demo-singleflight.git
 ```
 
+### Install package
+```
+go mod tidy
+```
+
 ### Install Apache benchmark
 ```
 Windows
